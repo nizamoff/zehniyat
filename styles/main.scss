@@ -11,7 +11,6 @@ body {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style-type: none;
     outline: none;
     border: none;
 }
@@ -125,6 +124,37 @@ body {
     }
 }
 
+.privacy {
+    box-sizing: border-box;
+    &__title {
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    &__text {
+        margin-bottom: 32px;
+    }
+    &__list {
+        padding-left: 25px;
+        margin-bottom: 10px;
+    }
+}
+
+.blog {
+    box-sizing: border-box;
+    &__title {
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    &__text {
+        margin-bottom: 32px;
+    }
+    &__list {
+        padding-left: 25px;
+        margin-bottom: 25px;
+    }
+
+}
+
 .breadcrump {
     display: flex;
     align-items: center;
@@ -155,33 +185,6 @@ body {
 
 }
 
-.blog {
-    &__title {
-        text-align: center;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 48px;
-        text-align: center;
-        text-transform: capitalize;
-        color: #131313;
-        margin-bottom: 24px;
-    }
-    &__subtitle {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 32px;
-        text-transform: capitalize;
-        color: #131313;
-    }
-    &__text {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 32px;
-        text-transform: capitalize;
-        color: rgba(49, 51, 51, 0.7);
-        margin-bottom: 30px;
-    }
-}
 
 .footer {
     display: flex;
@@ -189,9 +192,12 @@ body {
     padding: 300px 0 60px 0;
     width: 700px;
     margin: 0 auto;
+    
 
     &__list {
         display: flex;
+        list-style-type: none;
+        list-style: none;
     }
 
     &__item {
